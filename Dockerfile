@@ -1,5 +1,6 @@
 FROM  centos:latest
 MAINTAINER sumitsp9552@gmail.com
+RUN apt-get -y update && apt-get install -y supervisor
 RUN apt-get install -y httpd \
  zip\
  unzip
